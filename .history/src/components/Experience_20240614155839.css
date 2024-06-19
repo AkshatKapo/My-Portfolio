@@ -1,0 +1,47 @@
+#experience {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  #experience h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .experience-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .experience-item {
+    margin-bottom: 2rem;
+    text-align: left;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  .experience-item h3 {
+    font-size: 1.5rem;
+  }
+  
+  .experience-item h4 {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .experience-item p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+  .experience-content ul {
+    list-style-type: disc; /* Use "circle" or "square" for different bullet styles */
+    margin-left: 20px; /* Adjust left margin as needed */
+  }
+  
+  .experience-content li {
+    margin-bottom: 10px; /* Space between bullet points */
+  }
+  
+  

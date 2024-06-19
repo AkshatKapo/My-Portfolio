@@ -1,0 +1,47 @@
+.skills-content {
+  padding: 1rem;
+  display: flex;
+  background-color: #f9f9f9;
+  border: 2px solid #ddd; /* Light border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  margin: 2rem; /* Margin to ensure it doesn’t touch the edges of the container */
+
+  }
+  
+  .skills-list {
+    display: table-column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px; /* Adjust the max-width as needed */
+  background: #fff; /* Background for the content */
+  padding: 2rem; /* Padding around the content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for styling */
+  border-radius: 8px; /* Rounded corners */
+  }
+  
+  .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    margin: 10px;
+  }
+  
+  .skill i {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .skill p {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  .separator {
+    height: 2px;
+    width: 50px;
+    background-color: #000;
+    margin: 10px auto 20px;
+  }
+  

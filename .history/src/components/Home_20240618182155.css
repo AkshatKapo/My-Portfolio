@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+#home {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  border: 2px solid #ddd; /* Light border */
+  border-radius: 10px; /* Rounded corners */
+  margin: 2rem; /* Margin to ensure it doesn’t touch the edges of the container */
+}
+
+.home-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Adjust the max-width as needed */
+  background: #fff; /* Background for the content */
+  padding: 2rem; /* Padding around the content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for styling */
+  border-radius: 8px; /* Rounded corners */
+  text-align: center; /* Center text within content */
+}
+
+.text-content {
+  flex: 1;
+  font-family: 'Roboto', sans-serif;
+  text-align: center; /* Center text within text-content */
+}
+
+.text-content h3 {
+  font-size: 1.5rem; /* Adjust the font size as needed */
+  font-weight: 300;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.text-content h1 {
+  font-size: 2.5rem; /* Adjust the font size as needed */
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.text-content h4 {
+  font-size: 1.2rem; /* Adjust the font size as needed */
+  font-weight: 400;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.image-content {
+  flex: 0 0 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image {
+  width: 100%;
+  height: auto;
+  max-width: 250px;
+  max-height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px; /* Adjust the spacing between icons */
+  justify-content: center; /* Center icons within social-icons */
+}
+
+.social-icons a {
+  color: #000; /* Change the color if needed */
+  text-decoration: none;
+}
+
+.social-icons i {
+  font-size: 30px; /* Adjust the size of the font-awesome icons */
+}
+
+/* Add hover effect if desired */
+.social-icons a:hover {
+  opacity: 0.7; /* Example hover effect */
+}
+
+.line1 {
+  border-left: 2px solid black;
+  height: 100%; /* Set to match the height of the parent */
+  margin: 0 2rem; /* Adjust as needed to create space around the line */
+}
