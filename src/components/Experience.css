@@ -2,53 +2,91 @@
   padding: 1rem;
   display: flex;
   background-color: #f9f9f9;
-  border: 2px solid #ddd; /* Light border */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-  margin: 2rem; /* Margin to ensure it doesn’t touch the edges of the container */
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  margin: 2rem;
+}
+
+#experience-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  background: #fff;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: 5px solid grey;
+}
+
+#experience h2 {
+  font-size: 2rem;
+  text-align: left;
+  margin-bottom: 1rem;
+  margin-top: 0.2rem;
+  margin-left: 0.3rem;
+}
+
+.divider1 {
+  border-top: 2px solid black;
+  width: 100%;
+  margin: 20px 0;
+}
+
+#experience h3 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  margin-left: 0.3rem;
+}
+
+.experience-content ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.experience-content li {
+  margin-bottom: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  #experience {
+    margin: 1rem;
   }
-  #experience-content{
-    display: table-column;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1200px; /* Adjust the max-width as needed */
-    background: #fff; /* Background for the content */
-    padding: 2rem; /* Padding around the content */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for styling */
-    border-radius: 10px; /* Rounded corners */
-    border: 5px solid grey;
+
+  #experience-content {
+    padding: 1rem;
   }
-  #experience h2 {
-    font-size: 2rem;
-    text-align: left; /* This will align the heading to the left */
-    margin-bottom: 1rem; /* Adding some space between the heading and the paragraph */
-    margin-top: 0.2rem;
-    margin-left: 0.3rem;
-    
+
+  #experience h2, #experience h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
   }
-  .divider1 {
-    border-top: 2px solid black;
-    width: 100%; /* Adjust as needed */
-    margin: 20px 3; /* Adjust as needed */
-  }
-  #experience h3 {
-    font-size: 2rem;
-    text-align: center; 
-    margin-bottom: 1rem; /* Adding some space between the heading and the paragraph */
-    margin-top: 0.5rem;
-    margin-left: 0.3rem;
-    
-  }
+
   .experience-content ul {
-    list-style-type: disc; /* or another type of bullet, like circle or square */
-    margin-left: 20px;
+    margin-left: 10px;
   }
-  
+
   .experience-content li {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
-  
-  
-  
-  
-  
+}
+
+@media (max-width: 480px) {
+  #experience h2, #experience h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .experience-content ul {
+    margin-left: 5px;
+  }
+
+  .experience-content li {
+    margin-bottom: 5px;
+  }
+}

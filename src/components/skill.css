@@ -2,22 +2,23 @@
   padding: 1rem;
   display: flex;
   background-color: #f9f9f9;
-  border: 2px solid #ddd; /* Light border */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-  margin: 2rem; /* Margin to ensure it doesn’t touch the edges of the container */
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  margin: 2rem;
 }
 
 .skills-content {
-  display: table-column;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  max-width: 1200px; /* Adjust the max-width as needed */
-  background: #fff; /* Background for the content */
-  padding: 2rem; /* Padding around the content */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for styling */
-  border-radius: 8px; /* Rounded corners */
-  border: 5px solid grey
+  max-width: 1200px;
+  background: #fff;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  border: 5px solid grey;
 }
 
 .skills-list {
@@ -29,8 +30,8 @@
 
 #skills h2 {
   font-size: 2rem;
-  text-align: left; /* This will align the heading to the left */
-  margin-bottom: 1rem; /* Adding some space between the heading and the paragraph */
+  text-align: left;
+  margin-bottom: 1rem;
   margin-top: 0.2rem;
   margin-left: 0.3rem;
 }
@@ -55,7 +56,58 @@
 
 .separator2 {
   height: 2px;
-  width: 100%; /* Set to 100% to fill the parent container */
+  width: 100%;
   background-color: #000;
   margin: 10px auto 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  #skills {
+    margin: 1rem;
+  }
+
+  .skills-content {
+    padding: 1rem;
+  }
+
+  #skills h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .skill {
+    width: 80px;
+    margin: 5px;
+  }
+
+  .skill i {
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+
+  .skill p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  #skills h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .skill {
+    width: 60px;
+    margin: 5px;
+  }
+
+  .skill i {
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+
+  .skill p {
+    font-size: 12px;
+  }
 }

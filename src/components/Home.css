@@ -1,3 +1,4 @@
+/* Base styles */
 #home {
   padding: 1rem;
   display: flex;
@@ -84,25 +85,87 @@
 
 .social-icons {
   display: flex;
-  gap: 30px; /* Adjust the spacing between icons */
+  gap: 30px; 
   justify-content: center;
 }
 
 .social-icons a {
-  color: #000; /* Change the color if needed */
+  color: #000; 
   text-decoration: none;
 }
 
 .social-icons .icon {
-  width: 40px; /* Adjust the size of the icons */
-  height: 40px; /* Adjust the size of the icons */
+  width: 40px; 
+  height: 40px; 
 }
 
 .social-icons i {
-  font-size: 40px; /* Adjust the size of the font-awesome icons */
+  font-size: 40px; 
 }
 
-/* Add hover effect if desired */
 .social-icons a:hover {
-  opacity: 0.7; /* Example hover effect */
+  opacity: 0.7; 
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  #home {
+    margin: 1rem; 
+  }
+
+  .home-content {
+    flex-direction: column;
+    padding: 1rem; 
+  }
+
+  .separator {
+    width: 100%; 
+    height: 2px; 
+    margin: 1rem 0; 
+  }
+
+  .text-content {
+    padding-right: 0;
+    text-align: center; 
+  }
+
+  .text-content h2 {
+    font-size: 2rem; 
+  }
+
+  .text-content h3, .text-content h4, .text-content p {
+    font-size: 1rem; 
+  }
+
+  .image-content {
+    margin-top: 1rem; 
+  }
+
+  .profile-image {
+    width: 150px; 
+    height: 150px; 
+  }
+
+  .social-icons .icon, .social-icons i {
+    width: 30px; 
+    height: 30px; 
+    font-size: 30px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .text-content h2 {
+    font-size: 1.5rem; 
+  }
+
+  .profile-image {
+    width: 120px; 
+    height: 120px; 
+  }
+
+  .social-icons .icon, .social-icons i {
+    width: 25px; 
+    height: 25px; 
+    font-size: 25px; 
+  }
 }
