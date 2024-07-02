@@ -12,12 +12,13 @@ const Header = () => {
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="/Akshat_Kapoor_Resume.pdf">Resume</a></li>
+            <li><a href="https://AkshatKapo.github.io/My-Portfolio/Akshat_Kapoor_Resume.pdf">Resume</a></li>
           </ul>
         </nav>
       </header>
     </div>
   )
 }
+
 
 export default Header
